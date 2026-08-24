@@ -1,0 +1,332 @@
+:root {
+    --bg-dark: #0b0f19;
+    --bg-darker: #070a10;
+    --card-bg: rgba(22, 31, 51, 0.65);
+    --border-color: rgba(0, 242, 254, 0.15);
+    --primary-cyan: #00f2fe;
+    --accent-blue: #4facfe;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+}
+
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+}
+
+.bg-darker {
+    background-color: var(--bg-darker);
+}
+
+.font-mono {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-cyan {
+    color: var(--primary-cyan) !important;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary-cyan), var(--accent-blue));
+    
+    -webkit-text-fill-color: transparent;
+}
+
+.hover-cyan:hover {
+    color: var(--primary-cyan) !important;
+}
+
+/* NAVIGATION */
+.transition-navbar {
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    background: rgba(11, 15, 25, 0.4);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-scrolled {
+    background: rgba(7, 10, 16, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.nav-link {
+    color: var(--text-muted) !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-cyan) !important;
+}
+
+/* BUTTONS */
+.btn-cyan {
+    background: linear-gradient(135deg, var(--primary-cyan), var(--accent-blue));
+    color: #000;
+    font-weight: 600;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-cyan:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+    color: #000;
+}
+
+.btn-outline-cyan {
+    border: 1px solid var(--primary-cyan);
+    color: var(--primary-cyan);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-cyan:hover {
+    background: var(--primary-cyan);
+    color: #000;
+}
+
+.btn-glass {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-main);
+}
+
+.btn-glass:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--primary-cyan);
+}
+
+.social-icon-btn {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.social-icon-btn:hover {
+    background: var(--primary-cyan);
+    color: #000;
+    transform: translateY(-3px);
+}
+
+/* GLASS CARDS */
+.glass-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.glass-card:hover {
+    border-color: rgba(0, 242, 254, 0.4);
+}
+
+.badge-tech {
+    background: rgba(0, 242, 254, 0.1);
+    border: 1px solid var(--border-color);
+    color: var(--primary-cyan);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.stat-card {
+    background: rgba(22, 31, 51, 0.4);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+/* HERO SECTION & AVATAR */
+.hero-avatar-wrapper {
+    width: 260px;
+    height: 260px;
+}
+
+.hero-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-avatar-glow {
+    position: absolute;
+    inset: -10px;
+    background: radial-gradient(circle, rgba(0,242,254,0.3) 0%, rgba(0,0,0,0) 70%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.floating-badge {
+    position: absolute;
+    background: rgba(11, 15, 25, 0.85);
+    border: 1px solid var(--border-color);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.badge-1 { top: 10%; left: -20px; }
+.badge-2 { bottom: 10%; right: -20px; }
+
+/* SECTION TITLES */
+.section-title {
+    font-weight: 700;
+}
+
+.title-line {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-cyan), transparent);
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+/* SKILLS */
+.skill-tag {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-main);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    border-color: var(--primary-cyan);
+    color: var(--primary-cyan);
+    background: rgba(0, 242, 254, 0.05);
+}
+
+/* WORKFLOW STEPPER */
+.workflow-step {
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.workflow-step.active, .workflow-step:hover {
+    border-bottom-color: var(--primary-cyan);
+    background: rgba(0, 242, 254, 0.05);
+}
+
+.step-num {
+    font-family: monospace;
+    font-weight: bold;
+    color: var(--text-muted);
+}
+
+.workflow-step.active .step-num {
+    color: var(--primary-cyan);
+}
+
+.step-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* PROJECT FILTERS */
+.btn-filter {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    border-radius: 20px;
+    padding: 6px 16px;
+    transition: all 0.2s ease;
+}
+
+.btn-filter:hover, .btn-filter.active {
+    background: var(--primary-cyan);
+    color: #000;
+    border-color: var(--primary-cyan);
+    font-weight: 600;
+}
+
+.project-card {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ALGORITHM CARDS */
+.algorithm-card {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.algorithm-card:hover, .algorithm-card.active {
+    border-color: var(--primary-cyan);
+    background: rgba(0, 242, 254, 0.08);
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -27px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary-cyan);
+    box-shadow: 0 0 10px var(--primary-cyan);
+}
+
+/* FORM INPUTS */
+.custom-input {
+    background: rgba(11, 15, 25, 0.8);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+}
+
+.custom-input:focus {
+    background: rgba(11, 15, 25, 0.95);
+    border-color: var(--primary-cyan);
+    color: var(--text-main);
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+}
+
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+    .badge-1, .badge-2 { display: none; }
+    .hero-avatar-wrapper { width: 180px; height: 180px; }
+}

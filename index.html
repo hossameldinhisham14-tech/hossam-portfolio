@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Hossam Hisham Abdelmoneim - Data Analyst & AI Enthusiast based in Beni-Suef, Egypt.">
+    <title>Hossam Hisham | Data Analyst & AI Enthusiast</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top transition-navbar">
+        <div class="container">
+            <a class="navbar-brand font-mono fw-bold text-gradient" href="#home">
+                &lt;HossamHisham /&gt;
+            </a>
+            <button class="navbar-toggler border-0 shadow-none text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center me-3">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <a href="assets/documents/Cv-DEPI.pdf" class="btn btn-outline-cyan btn-sm" download="Hossam_Hisham_CV.pdf">
+                        <i class="bi bi-download me-1"></i> CV
+                    </a>
+                    <a href="#contact" class="btn btn-cyan btn-sm">Let’s Talk</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100 position-relative overflow-hidden pt-5">
+        <canvas id="hero-canvas" class="position-absolute top-0 start-0 w-100 h-100"></canvas>
+        <div class="container position-relative z-1 py-5">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7">
+                    <div class="badge badge-tech mb-3 px-3 py-2">
+                        <i class="bi bi-geo-alt-fill text-cyan me-1"></i> Beni-Suef, Egypt
+                    </div>
+                    <h1 class="display-3 fw-bold text-white mb-2">Hossam Hisham</h1>
+                    <h2 class="h3 font-mono text-cyan mb-4">
+                        <span id="typing-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="lead text-secondary mb-4 pe-lg-4">
+                        Third-year Computer & AI student at Beni-Suef University. Currently specializing in Data Analysis, Exploratory Data Analysis (EDA), and Machine Learning techniques to deliver practical data-driven solutions.
+                    </p>
+                    
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#projects" class="btn btn-cyan btn-lg">View My Work</a>
+                        <a href="assets/documents/Cv-DEPI.pdf" class="btn btn-outline-light btn-lg" download="Hossam_Hisham_CV.pdf">
+                            <i class="bi bi-file-earmark-pdf me-2"></i>Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-glass btn-lg">Let’s Talk</a>
+                    </div>
+
+                    <!-- HERO QUICK CONTACTS -->
+                    <div class="d-flex flex-wrap gap-3 align-items-center pt-2">
+                        <a href="tel:+201103487371" class="social-icon-btn" title="Call Me"><i class="bi bi-telephone"></i></a>
+                        <a href="mailto:hossameldinhisham@gmail.com" class="social-icon-btn" title="Email Me"><i class="bi bi-envelope"></i></a>
+                        <a href="https://wa.me/201103487371" target="_blank" class="social-icon-btn" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://linkedin.com/in/hossamhisham144" target="_blank" class="social-icon-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/hossameldinhisham14-tech" target="_blank" class="social-icon-btn" title="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="https://instagram.com/hossameldin.14" target="_blank" class="social-icon-btn" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 text-center">
+                    <div class="hero-avatar-wrapper position-relative d-inline-block">
+                        <div class="hero-avatar-glow"></div>
+                        <img src="assets/images/profile.jpg" alt="Hossam Hisham" class="img-fluid rounded-circle hero-avatar border border-2 border-cyan shadow-lg">
+                        <div class="floating-badge badge-1">
+                            <i class="bi bi-bar-chart-fill text-cyan me-2"></i>Data Analysis
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="bi bi-cpu-fill text-cyan me-2"></i>Machine Learning
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-cyan font-mono text-uppercase">Overview</span>
+                <h2 class="section-title text-white">About Me</h2>
+                <div class="title-line mx-auto"></div>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="glass-card p-4 h-100">
+                        <h3 class="h4 text-white mb-3">Background & Focus</h3>
+                        <p class="text-secondary">
+                            I am a third-year student at the Faculty of Computers and Artificial Intelligence, Beni-Suef University. My passion lies in extracting insights from raw datasets, cleaning operational data, and developing machine learning models to solve analytical problems.
+                        </p>
+                        <p class="text-secondary mb-0">
+                            Currently enrolled in the <strong>Digital Egypt Pioneers Initiative (DEPI) - Junior Data Analyst track</strong>, I am refining my technical and professional capabilities through project-based learning, statistical modeling, and data visualization.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="glass-card p-3 h-100">
+                                <i class="bi bi-mortarboard fs-2 text-cyan mb-2"></i>
+                                <h4 class="h6 text-white">Education</h4>
+                                <p class="small text-secondary mb-0">Faculty of Computers & AI, Beni-Suef University (3rd Year)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="glass-card p-3 h-100">
+                                <i class="bi bi-diagram-3 fs-2 text-cyan mb-2"></i>
+                                <h4 class="h6 text-white">Current Focus</h4>
+                                <p class="small text-secondary mb-0">DEPI Junior Data Analyst Track & Machine Learning Pipelines</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="glass-card p-3 h-100">
+                                <i class="bi bi-code-slash fs-2 text-cyan mb-2"></i>
+                                <h4 class="h6 text-white">Technical Direction</h4>
+                                <p class="small text-secondary mb-0">Python, EDA, Data Cleaning, Supervised Learning, C++</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="glass-card p-3 h-100">
+                                <i class="bi bi-bullseye fs-2 text-cyan mb-2"></i>
+                                <h4 class="h6 text-white">Professional Goal</h4>
+                                <p class="small text-secondary mb-0">Securing an Internship or Entry-level Data Analyst / ML role</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUALITATIVE HIGHLIGHTS -->
+            <div class="row g-4 mt-4">
+                <div class="col-md-3 col-6">
+                    <div class="stat-card text-center p-3">
+                        <div class="h3 font-mono text-cyan mb-1">DEPI Track</div>
+                        <div class="small text-secondary">Junior Data Analyst</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card text-center p-3">
+                        <div class="h3 font-mono text-cyan mb-1">Cisco CCST</div>
+                        <div class="small text-secondary">Networking Certified</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card text-center p-3">
+                        <div class="h3 font-mono text-cyan mb-1">IBM Certified</div>
+                        <div class="small text-secondary">Data Fundamentals</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card text-center p-3">
+                        <div class="h3 font-mono text-cyan mb-1">English B2</div>
+                        <div class="small text-secondary">Professional Working</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATA ANALYSIS WORKFLOW SECTION -->
+    <section class="py-5 bg-darker">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-cyan font-mono text-uppercase">Interactive Process</span>
+                <h2 class="section-title text-white">Data Analysis Workflow</h2>
+                <div class="title-line mx-auto"></div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="workflow-stepper d-flex flex-wrap justify-content-between mb-4">
+                        <div class="workflow-step active" data-step="1">
+                            <div class="step-num">01</div>
+                            <div class="step-title">Data</div>
+                        </div>
+                        <div class="workflow-step" data-step="2">
+                            <div class="step-num">02</div>
+                            <div class="step-title">Cleaning</div>
+                        </div>
+                        <div class="workflow-step" data-step="3">
+                            <div class="step-num">03</div>
+                            <div class="step-title">EDA</div>
+                        </div>
+                        <div class="workflow-step" data-step="4">
+                            <div class="step-num">04</div>
+                            <div class="step-title">Visualization</div>
+                        </div>
+                        <div class="workflow-step" data-step="5">
+                            <div class="step-num">05</div>
+                            <div class="step-title">Insights</div>
+                        </div>
+                        <div class="workflow-step" data-step="6">
+                            <div class="step-num">06</div>
+                            <div class="step-title">Decision</div>
+                        </div>
+                    </div>
+                    <div class="glass-card p-4 text-center min-h-150 d-flex align-items-center justify-content-center">
+                        <div id="workflow-description" class="lead text-secondary">
+                            <strong class="text-white d-block mb-2">Stage 1: Raw Data Collection</strong>
+                            Gathering raw operational data, numerical variables, and structured inputs from disparate sources for evaluation.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-cyan font-mono text-uppercase">Technical Toolkit</span>
+                <h2 class="section-title text-white">Skills & Proficiencies</h2>
+                <div class="title-line mx-auto"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Programming -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-code-square text-cyan fs-3 me-3"></i>
+                            <h3 class="h5 text-white mb-0">Programming</h3>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-graph-up-arrow text-cyan fs-3 me-3"></i>
+                            <h3 class="h5 text-white mb-0">Data Analysis</h3>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-tag">Data Cleaning</span>
+                            <span class="skill-tag">Exploratory Data Analysis (EDA)</span>
+                            <span class="skill-tag">Data Quality</span>
+                            <span class="skill-tag">Statistics</span>
+                            <span class="skill-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning & AI -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-robot text-cyan fs-3 me-3"></i>
+                            <h3 class="h5 text-white mb-0">Machine Learning & AI</h3>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Supervised Learning</span>
+                            <span class="skill-tag">Predictive Modeling</span>
+                            <span class="skill-tag">BFS / DFS</span>
+                            <span class="skill-tag">UCS / A* Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Libraries & Tools -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-tools text-cyan fs-3 me-3"></i>
+                            <h3 class="h5 text-white mb-0">Libraries & Tools</h3>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Microsoft Excel</span>
+                            <span class="skill-tag">Git / GitHub</span>
+                            <span class="skill-tag">Cisco Packet Tracer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Fundamentals & Soft Skills -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="skill-card glass-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-layers text-cyan fs-3 me-3"></i>
+                            <h3 class="h5 text-white mb-0">Fundamentals & Professional Skills</h3>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">Computer Networks</span>
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Teamwork</span>
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Presentation Skills</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-5 bg-darker">
+        <div class="container py-4">
+            <div class="text-center mb-4">
+                <span class="text-cyan font-mono text-uppercase">Portfolio Showcase</span>
+                <h2 class="section-title text-white">Featured Projects</h2>
+                <div class="title-line mx-auto"></div>
+            </div>
+
+            <!-- Project Filter Buttons -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+                <button class="btn btn-filter active" data-filter="all">All</button>
+                <button class="btn btn-filter" data-filter="data-analysis">Data Analysis</button>
+                <button class="btn btn-filter" data-filter="machine-learning">Machine Learning</button>
+                <button class="btn btn-filter" data-filter="ai">Artificial Intelligence</button>
+                <button class="btn btn-filter" data-filter="programming">Programming</button>
+                <button class="btn btn-filter" data-filter="networking">Networking</button>
+            </div>
+
+            <!-- Project Cards Grid -->
+            <div class="row g-4" id="projects-grid">
+                
+                <!-- Predictive Maintenance -->
+                <div class="col-lg-6 project-item" data-category="machine-learning data-analysis">
+                    <div class="glass-card project-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge badge-tech">Machine Learning</span>
+                                <i class="bi bi-cpu fs-3 text-cyan"></i>
+                            </div>
+                            <h3 class="h4 text-white mb-2">Predictive Maintenance using ML</h3>
+                            <p class="text-secondary small">
+                                Developed a Machine Learning system to predict machine failures before occurrence, enabling data-driven predictive maintenance decisions.
+                            </p>
+                            <div class="d-flex flex-wrap gap-1 mb-3">
+                                <span class="badge badge-sm bg-dark text-cyan">Python</span>
+                                <span class="badge badge-sm bg-dark text-cyan">ML</span>
+                                <span class="badge badge-sm bg-dark text-cyan">EDA</span>
+                                <span class="badge badge-sm bg-dark text-cyan">Data Preprocessing</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-cyan btn-sm w-100 btn-project-details" data-project="predictive-maintenance">
+                            View Details <i class="bi bi-arrow-right ms-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- AI Maze Solver -->
+                <div class="col-lg-6 project-item" data-category="ai programming">
+                    <div class="glass-card project-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge badge-tech">Artificial Intelligence</span>
+                                <i class="bi bi-diagram-2 fs-3 text-cyan"></i>
+                            </div>
+                            <h3 class="h4 text-white mb-2">AI Maze Solver</h3>
+                            <p class="text-secondary small">
+                                Implemented pathfinding algorithms (BFS, DFS, UCS, A*) to navigate maze layouts, evaluating path length, explored nodes, and execution time.
+                            </p>
+                            <div class="d-flex flex-wrap gap-1 mb-3">
+                                <span class="badge badge-sm bg-dark text-cyan">Python</span>
+                                <span class="badge badge-sm bg-dark text-cyan">BFS/DFS</span>
+                                <span class="badge badge-sm bg-dark text-cyan">A* Search</span>
+                                <span class="badge badge-sm bg-dark text-cyan">Matplotlib</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-cyan btn-sm w-100 btn-project-details" data-project="maze-solver">
+                            View Details <i class="bi bi-arrow-right ms-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Computer Networks Project -->
+                <div class="col-lg-6 project-item" data-category="networking">
+                    <div class="glass-card project-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge badge-tech">Networking</span>
+                                <i class="bi bi-hdd-network fs-3 text-cyan"></i>
+                            </div>
+                            <h3 class="h4 text-white mb-2">Computer Networks Infrastructure</h3>
+                            <p class="text-secondary small">
+                                Designed and configured enterprise network architectures using Cisco Packet Tracer, managing routers, switches, VLANs, and DHCP services.
+                            </p>
+                            <div class="d-flex flex-wrap gap-1 mb-3">
+                                <span class="badge badge-sm bg-dark text-cyan">Cisco Packet Tracer</span>
+                                <span class="badge badge-sm bg-dark text-cyan">VLANs</span>
+                                <span class="badge badge-sm bg-dark text-cyan">DHCP</span>
+                                <span class="badge badge-sm bg-dark text-cyan">Routing</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-cyan btn-sm w-100 btn-project-details" data-project="networks-project">
+                            View Details <i class="bi bi-arrow-right ms-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Data Structures Projects -->
+                <div class="col-lg-6 project-item" data-category="programming">
+                    <div class="glass-card project-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge badge-tech">Data Structures</span>
+                                <i class="bi bi-tree fs-3 text-cyan"></i>
+                            </div>
+                            <h3 class="h4 text-white mb-2">Data Structures Implementations</h3>
+                            <p class="text-secondary small">
+                                Implemented standard and advanced data structures in C++, including AVL Trees, Heaps, Graphs, Hashing, and Shortest Path algorithms.
+                            </p>
+                            <div class="d-flex flex-wrap gap-1 mb-3">
+                                <span class="badge badge-sm bg-dark text-cyan">C++</span>
+                                <span class="badge badge-sm bg-dark text-cyan">Trees/AVL</span>
+                                <span class="badge badge-sm bg-dark text-cyan">Graphs</span>
+                                <span class="badge badge-sm bg-dark text-cyan">Dijkstra</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-cyan btn-sm w-100 btn-project-details" data-project="data-structures">
+                            View Details <i class="bi bi-arrow-right ms-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- AI MAZE SOLVER SPECIAL FEATURE SPOTLIGHT -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-cyan font-mono text-uppercase">Interactive Spotlight</span>
+                <h2 class="section-title text-white">AI Pathfinding Search Algorithms</h2>
+                <div class="title-line mx-auto"></div>
+                <p class="text-secondary small mt-2">Interactive algorithm comparison framework built into the AI Maze Solver project.</p>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="algorithm-card glass-card p-3 text-center" data-algo="bfs">
+                        <i class="bi bi-diagram-3 fs-2 text-cyan mb-2 d-block"></i>
+                        <h4 class="h6 text-white mb-1">BFS (Breadth-First Search)</h4>
+                        <span class="badge bg-dark text-secondary">Uninformed Search</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="algorithm-card glass-card p-3 text-center" data-algo="dfs">
+                        <i class="bi bi-arrow-down-up fs-2 text-cyan mb-2 d-block"></i>
+                        <h4 class="h6 text-white mb-1">DFS (Depth-First Search)</h4>
+                        <span class="badge bg-dark text-secondary">Uninformed Search</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="algorithm-card glass-card p-3 text-center" data-algo="ucs">
+                        <i class="bi bi-signpost-split fs-2 text-cyan mb-2 d-block"></i>
+                        <h4 class="h6 text-white mb-1">UCS (Uniform Cost Search)</h4>
+                        <span class="badge bg-dark text-secondary">Optimal Cost Search</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="algorithm-card glass-card p-3 text-center" data-algo="a-manhattan">
+                        <i class="bi bi-grid-3x3 fs-2 text-cyan mb-2 d-block"></i>
+                        <h4 class="h6 text-white mb-1">A* (Manhattan Distance)</h4>
+                        <span class="badge bg-dark text-secondary">Heuristic Search</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="algorithm-card glass-card p-3 text-center" data-algo="a-euclidean">
+                        <i class="bi bi-compass fs-2 text-cyan mb-2 d-block"></i>
+                        <h4 class="h6 text-white mb-1">A* (Euclidean Distance)</h4>
+                        <span class="badge bg-dark text-secondary">Heuristic Search</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="algo-info-box" class="glass-card p-4 mt-4 text-center">
+                <h4 class="h5 text-cyan mb-2" id="algo-title">Select an algorithm above</h4>
+                <p class="text-secondary mb-0" id="algo-desc">Click any search algorithm card to inspect its pathfinding characteristics and strategy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-5 bg-darker">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-cyan font-mono text-uppercase">Practical Experience</span>
+                <h2 class="section-title text-white">Experience & Training</h2>
+                <div class="title-line mx-auto"></div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="glass-card p-4">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                    <h3 class="h4 text-white mb-0">Digital Egypt Pioneers Initiative (DEPI)</h3>
+                                    <span class="badge badge-tech">Ongoing Track</span>
+                                </div>
+                                <h4 class="h6 text-cyan mb-3">Junior Data Analyst Track</h4>
+                                <ul class="text-secondary small mb-0 ps-3">
+                                    <li class="mb-2">Developing practical skills in Data Analysis and data-driven problem solving.</li>
+                                    <li class="mb-2">Executing data cleaning, validation, quality assessment, and Exploratory Data Analysis (EDA).</li>
+                                    <li class="mb-2">Participating in practical activities, team-based assignments, and project-based learning.</li>
+                                    <li>Refining professional communication, presentation skills, and technical English vocabulary.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-cyan font-mono text-uppercase">Academic Foundation</span>
+                <h2 class="section-title text-white">Education</h2>
+                <div class="title-line mx-auto"></div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="glass-card p-4 text-center position-relative">
+                        <i class="bi bi-mortarboard-fill fs-1 text-cyan mb-3 d-block"></i>
+                        <h3 class="h4 text-white mb-1">Beni-Suef University</h3>
+                        <p class="text-cyan font-mono mb-2">Faculty of Computers and Artificial Intelligence</p>
+                        <p class="text-secondary mb-2">Bachelor’s Degree in Computers and Artificial Intelligence</p>
+                        <span class="badge badge-tech px-3 py-2">Current Status: Third Year</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates" class="py-5 bg-darker">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-cyan font-mono text-uppercase">Credentials</span>
+                <h2 class="section-title text-white">Certificates</h2>
+                <div class="title-line mx-auto"></div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- CCST -->
+                <div class="col-md-6">
+                    <div class="glass-card p-4 h-100 d-flex align-items-center">
+                        <div class="cert-icon me-4 text-cyan">
+                            <i class="bi bi-shield-check fs-1"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5 text-white mb-1">Cisco Certified Support Technician (CCST) Networking</h3>
+                            <p class="text-cyan small mb-1">Issuer: Cisco</p>
+                            <span class="badge bg-dark text-secondary">May 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IBM Data Fundamentals -->
+                <div class="col-md-6">
+                    <div class="glass-card p-4 h-100 d-flex align-items-center">
+                        <div class="cert-icon me-4 text-cyan">
+                            <i class="bi bi-award fs-1"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5 text-white mb-1">Data Fundamentals</h3>
+                            <p class="text-cyan small mb-1">Issuer: IBM SkillsBuild</p>
+                            <span class="badge bg-dark text-secondary">August 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LANGUAGES -->
+            <div class="row g-4 mt-4 justify-content-center">
+                <div class="col-md-5">
+                    <div class="glass-card p-3 text-center">
+                        <span class="text-secondary small font-mono d-block mb-1">LANGUAGES</span>
+                        <div class="d-flex justify-content-center gap-4">
+                            <div><strong class="text-white">Arabic:</strong> <span class="text-cyan">Native</span></div>
+                            <div><strong class="text-white">English:</strong> <span class="text-cyan">B2</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEDICATED CV SECTION -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="glass-card p-5 text-center position-relative overflow-hidden">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-8">
+                        <i class="bi bi-file-earmark-pdf fs-1 text-cyan mb-3 d-block"></i>
+                        <h2 class="h3 text-white mb-2">Curriculum Vitae</h2>
+                        <p class="text-secondary mb-4">
+                            Detailed overview of my academic background, projects, DEPI Data Analyst training, and technical skill set.
+                        </p>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="assets/documents/Cv-DEPI.pdf" target="_blank" class="btn btn-cyan">
+                                <i class="bi bi-eye me-2"></i>View CV
+                            </a>
+                            <a href="assets/documents/Cv-DEPI.pdf" download="Hossam_Hisham_CV.pdf" class="btn btn-outline-light">
+                                <i class="bi bi-download me-2"></i>Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-5 bg-darker">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-cyan font-mono text-uppercase">Get In Touch</span>
+                <h2 class="section-title text-white">Contact Me</h2>
+                <div class="title-line mx-auto"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column gap-3">
+                        
+                        <!-- Phone Card -->
+                        <div class="glass-card p-3 d-flex align-items-center justify-content-between">
+                            <a href="tel:+201103487371" class="d-flex align-items-center text-decoration-none">
+                                <i class="bi bi-telephone fs-3 text-cyan me-3"></i>
+                                <div>
+                                    <div class="small text-secondary">Phone</div>
+                                    <div class="text-white fw-bold">+20 110 348 7371</div>
+                                </div>
+                            </a>
+                            <button class="btn btn-sm btn-glass copy-btn" data-copy="+201103487371" title="Copy Phone">
+                                <i class="bi bi-clipboard"></i>
+                            </button>
+                        </div>
+
+                        <!-- Email Card -->
+                        <div class="glass-card p-3 d-flex align-items-center justify-content-between">
+                            <a href="mailto:hossameldinhisham@gmail.com" class="d-flex align-items-center text-decoration-none">
+                                <i class="bi bi-envelope fs-3 text-cyan me-3"></i>
+                                <div>
+                                    <div class="small text-secondary">Email</div>
+                                    <div class="text-white fw-bold small">hossameldinhisham@gmail.com</div>
+                                </div>
+                            </a>
+                            <button class="btn btn-sm btn-glass copy-btn" data-copy="hossameldinhisham@gmail.com" title="Copy Email">
+                                <i class="bi bi-clipboard"></i>
+                            </button>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="glass-card p-3 d-flex align-items-center">
+                            <i class="bi bi-geo-alt fs-3 text-cyan me-3"></i>
+                            <div>
+                                <div class="small text-secondary">Location</div>
+                                <div class="text-white fw-bold">Beni-Suef, Egypt</div>
+                            </div>
+                        </div>
+
+                        <!-- Social Connections -->
+                        <div class="glass-card p-3">
+                            <div class="small text-secondary mb-2">Connect Directly</div>
+                            <div class="d-flex gap-2">
+                                <a href="https://wa.me/201103487371" target="_blank" class="btn btn-glass btn-sm flex-fill">
+                                    <i class="bi bi-whatsapp text-success me-1"></i> WhatsApp
+                                </a>
+                                <a href="https://linkedin.com/in/hossamhisham144" target="_blank" class="btn btn-glass btn-sm flex-fill">
+                                    <i class="bi bi-linkedin text-cyan me-1"></i> LinkedIn
+                                </a>
+                                <a href="https://github.com/hossameldinhisham14-tech" target="_blank" class="btn btn-glass btn-sm flex-fill">
+                                    <i class="bi bi-github text-white me-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CONTACT FORM -->
+                <div class="col-lg-7">
+                    <div class="glass-card p-4">
+                        <form id="contact-form" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-secondary small">Your Name</label>
+                                <input type="text" class="form-control custom-input" id="name" required placeholder="Name">
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-secondary small">Email Address</label>
+                                <input type="email" class="form-control custom-input" id="email" required placeholder="name@example.com">
+                                <div class="invalid-feedback">Please enter a valid email.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label text-secondary small">Message</label>
+                                <textarea class="form-control custom-input" id="message" rows="4" required placeholder="Write your message here..."></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                            <button type="submit" class="btn btn-cyan w-100 py-2">
+                                <i class="bi bi-send me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 border-top border-secondary border-opacity-25">
+        <div class="container text-center">
+            <h3 class="h5 text-white font-mono mb-2">&lt;Hossam Hisham /&gt;</h3>
+            <p class="text-secondary small mb-3">Data Analyst | AI Enthusiast | Computer & AI Student</p>
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="https://linkedin.com/in/hossamhisham144" target="_blank" class="text-secondary hover-cyan"><i class="bi bi-linkedin fs-5"></i></a>
+                <a href="https://github.com/hossameldinhisham14-tech" target="_blank" class="text-secondary hover-cyan"><i class="bi bi-github fs-5"></i></a>
+                <a href="https://instagram.com/hossameldin.14" target="_blank" class="text-secondary hover-cyan"><i class="bi bi-instagram fs-5"></i></a>
+                <a href="mailto:hossameldinhisham@gmail.com" class="text-secondary hover-cyan"><i class="bi bi-envelope fs-5"></i></a>
+            </div>
+            <p class="small text-secondary mb-0">&copy; 2026 Hossam Hisham Abdelmoneim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="btn btn-cyan rounded-circle position-fixed bottom-0 end-0 m-4 d-none z-3" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- PROJECT MODAL -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content glass-card border-secondary text-light">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-header-title text-cyan mb-0" id="modalTitle">Project Title</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Dynamic Modal Content populated by script.js -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-container position-fixed bottom-0 start-0 p-3 z-3">
+        <div id="actionToast" class="toast align-items-center text-bg-dark border-cyan" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body text-cyan" id="toastMessage">
+                    Copied to clipboard!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
